@@ -8,16 +8,17 @@ function playSound (e) {
     
     console.log(audio);
     console.log(key);
-    if(!audio) return; //stop the function from running all together.
+    if (!audio) return; //stop the function from running all together.
     
         //To play the sound on the key.
-        // audio.play();
+        audio.play();
+        
     
         // To play fast after clicking.
-        // audio.currentTime = 0; //rewind to the start/
+        audio.currentTime = 0; //rewind to the start
     
         //For the Keys.
-    key.classList.add("playing");
+       key.classList.add("playing");
     
 }
 
